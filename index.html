@@ -17,13 +17,14 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
     </head>
     <body>
-        <section data-role="page">
-
+        
+        <!-- This section is for HOME ONLY ! -->
+        <section data-role="page" id="home">
             <nav data-role="navbar">
                 <ul>
-                    <li><a href="#/" data-icon="home" class="ui-btn-active"><center>Home</center></a></li>
-                    <li><a href="#" data-icon="comment" data-theme="b" >Forums</a></li>
-                    <li><a href="#" data-icon="arrow-r" data-theme="b">Login</a></li>
+                    <li><a href="#home" data-icon="home"><center>Home</center></a></li>
+                    <li><a href="#forum" data-icon="comment" data-theme="b" >Forums</a></li>
+                    <li><a href="#login" data-icon="arrow-r" data-theme="b">Sign In</a></li>
                 </ul>
             </nav>
 
@@ -42,6 +43,53 @@
                     <li class="ui-icon-info ui-btn-icon-right"><a href="#">Lourdes College</a></li>
                     <li class="ui-icon-info ui-btn-icon-right"><a href="#">Bukidnon State University</a></li>
                 </ul>
+            </div>
+            <br><br>
+        </section>
+        
+        <!-- This section is for SIGN IN ONLY ! -->
+
+        <section data-role="page" id="login">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-theme="b"><center>Home</center></a></li>
+                    <li><a href="#forum" data-icon="comment" data-theme="b" >Forums</a></li>
+                    <li><a href="#login" data-icon="arrow-r">Sign In</a></li>
+                </ul>
+            </nav>
+            <div class="content" data-role="content">
+                <br><br><br><br><br><br><br>
+                <form>
+                    <input type="text" placeholder="Username" name="username"/>
+                    <input type="password" placeholder="Password" name="password"/>
+                    <button class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all ui-btn-active">Sign In</button>
+                    <br>
+                </form>
+                <a href="#registration" class="ui-btn ui-corner-all ui-btn-b ui-icon-edit ui-btn-icon-right">Sign Up</a>
+            </div>
+            <br><br>
+        </section>
+
+        <!-- This section is for REGISTRATION ONLY ! -->
+        
+        <section data-role="page" id="registration">
+            <nav data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-theme="b"><center>Home</center></a></li>
+                    <li><a href="#forum" data-icon="comment" data-theme="b" >Forums</a></li>
+                    <li><a href="#login" data-icon="arrow-r" data-theme="b">Sign In</a></li>
+                </ul>
+            </nav>
+            <div class="content" data-role="content">
+                <br><br><br><br><br><br><br>
+                <form>
+                    <input type="text" placeholder="Username" name="username"/>
+                    <input type="text" placeholder="Email Address" name="email"/>
+                    <input type="password" placeholder="Password" name="password"/>
+                    <button class="ui-btn ui-icon-edit ui-btn-icon-right ui-corner-all ui-btn-active">Sign Up</button>
+                    <br>
+                </form>
+                <a href="#login" class="ui-btn ui-icon-arrow-r ui-corner-all ui-btn-icon-right ui-btn-b">Sign In</a>
             </div>
             <br><br>
         </section>
